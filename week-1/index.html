@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- When creating the first page of our website we always name it index -->
+<html lang="en">
+  <!-- notice the attribute lang that was added to the HTML element. This attribute is required and is responsible for declaring the default language of the application -->
+  <head>
+    <!-- in the head element we add our metadata, links to CSS files, links to our JS files and any other resources that we need to run our application. -->
+    <meta charset="utf-8"> <!-- this declares our character type -->
+    <!-- this detects what viewport the application we are is being viewed on -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="this is the description outlining the purpose of the page">
+    <!-- the robots metadata determines if the application will be found on the search engines. -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- the title element is not structured like other metadata but is considered metadata as well -->
+    <title>Week 1 - HTML Building Blocks</title>
+  </head>
+  <!-- the body element is where all our the content that we want displayed to the user is placed -->
+  <body>
+    <!-- let's start with the element that we use for our main title element. It is important to note that the heading element need to be used in the order that they are numbered h1 - h6 -->
+    <h1>This is our main title</h1>
+    <h2>Another title element</h2>
+    <!-- the majority of the text content is contained in a paragraph element -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda atque beatae blanditiis commodi cupiditate, deleniti deserunt doloribus ea, esse et eveniet fugit illo incidunt iure minima modi molestias nemo nesciunt obcaecati odit omnis optio perferendis porro quam quas quia ratione reiciendis saepe similique sint tempore tenetur veritatis! Commodi eos exercitationem facere quo quos saepe.</p>
+    <!-- When we need to create a list we can use the ol or ul. Really the main difference between the two are their default display. Let's use both of them so you can see the difference -->
+    <ol>
+      <!-- the li element must be a child element of the parent ul or ol element it cannot be used on its own -->
+      <li>Example one</li>
+      <li>Example two</li>
+    </ol>
+    <ul>
+      <li>Example three</li>
+      <li>Example four</li>
+    </ul>
+    <!-- the block quote is a way that we can source content that comes from another source. Think about how you would source an article for an exam -->
+    <blockquote cite="someWebsite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi corporis cupiditate fugiat laborum necessitatibus nostrum officia officiis quis quos ratione repellendus, sapiente vel! Blanditiis.</blockquote>
+    <!-- the span can be used to target text within an another content element to add special styling to it -->
+    <p>Lorem ipsum dolor sit amet, <span>consectetur</span> adipisicing elit. Aperiam cum dicta dolor error et harum, iusto, necessitatibus nemo odio officia quasi quis saepe sit, veritatis Lorem ipsum dolor.</p>
+    <!-- the table element is used to display a lot of data. Tables can be tricky because they are very tricky to make responsive -->
+    <table>
+      <!-- this groups the head of the table -->
+      <thead>
+        <!-- this defines a table row -->
+        <tr>
+          <!-- this defines a table cell -->
+          <th>Example 1</th>
+          <th>Example 2</th>
+        </tr>
+      </thead>
+      <!-- this is the table body -->
+      <tbody>
+        <tr>
+          <td>Example 1</td>
+          <td>Example 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
