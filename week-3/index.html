@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This week we will be looking at how to create an HTML form and an introduction to CSS">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Week 3 | Forms & An Introduction to CSS</title>
+    <!-- This is where we add our CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img src="./img/logo.png" alt="header logo">
+        </a>
+      </div>
+      <nav>
+        <menu>
+          <li><a href="#">Link One</a></li>
+          <li><a href="#">Link Two</a></li>
+        </menu>
+      </nav>
+    </header>
+    <!-- add our masthead -->
+    <section>
+      <h1>HTML Forms & CSS</h1>
+    </section>
+    <!-- add the container for our main content -->
+    <main>
+      <section>
+        <div>
+          <!-- add our form -->
+          <form action="somePHPfile" method="POST">
+            <label>Your Name (required)</label>
+            <br>
+            <input type="text" name="name" required>
+            <br>
+            <input type="email" name="email" placeholder="*Your Email" required>
+            <br>
+            <label>Password (required):</label>
+            <br>
+            <input type="password" name="pwd" required>
+            <br>
+            <label>Choose One:</label>
+            <br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <br>
+            <label>All that apply:</label>
+            <br>
+            <input type="checkbox" id="choice1" name="choice1" value="Choice 1">
+            <label for="choice1"> Choice 1</label><br>
+            <input type="checkbox" id="choice2" name="choice2" value="Choice 2">
+            <label for="choice2"> Choice 2</label><br>
+            <input type="checkbox" id="choice3" name="choice3" value="Choice 3">
+            <label for="choice3"> Choice 3</label>
+            <br>
+            <label>Quantity (between 1 and 10):</label>
+            <br>
+            <input type="number" name="quantity" min="1" max="10">
+            <br>
+            <label>Enter your phone number:</label>
+            <br>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- add a sidebar -->
+    <aside>
+      <article>
+        <img src="./img/image-1.jpg" alt="article image">
+        <h4>Article Title</h4>
+        <a href="#">Fake Button</a>
+      </article>
+      <article>
+        <img src="./img/image-2.jpg" alt="article image">
+        <h4>Article Title</h4>
+        <a href="#">Fake Button</a>
+      </article>
+    </aside>
+    <footer>
+      <div>
+        <a href="index.html">
+          <img src="./img/logo.png" alt="footer logo">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

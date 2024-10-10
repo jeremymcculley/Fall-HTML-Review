@@ -1,0 +1,122 @@
+body{
+  margin: 0px;
+  background-color: #f8f8f8;
+}
+/** style our text **/
+h1,h2,h3,h4,h5,h6{
+  font-family: sans-serif;
+}
+p,a,li,label{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+/** style our header **/
+header{
+  height: 125px;
+  background-color: #f8f8f8;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+header > div{
+  /** I am going to use a property called float, this is an older way to create a layout. We will look at a more modern way in a later class where we focus on layouts **/
+  width: auto;
+  /** remember the padding on the header so we can make sure we do not break our box model **/
+  height: 115px;
+  float: left;
+  position: relative;
+  top: 20%;
+}
+header > div > a > img{
+  width: auto;
+  height: 100%;
+}
+/** now our site navigation **/
+header > nav{
+  float: right;
+  padding-top: 35px;
+  position: relative;
+  top: 30%;
+}
+header > nav > menu{
+  list-style: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+header > nav > menu > li{
+  padding-right: 10px;
+  float: right;
+}
+/** Next is the masthead section. I am going to use a measurement unit called vh, this is based on our viewport **/
+body > header + section{
+  height: 100vh;
+  background-color: #8338ec;
+}
+body > header + section > h1{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 54px;
+}
+/** main **/
+main{
+  width: 60%;
+  float: left;
+}
+main > section{
+  padding: 5%;
+}
+main > section > div{
+  width: 50%;
+  margin: auto;
+}
+main > section > div > form{
+  width: 100%;
+}
+main > section > div > form > input[type="text"],
+main > section > div > form > input[type="email"],
+main > section > div > form > input[type="password"],
+main > section > div > form > input[type="tel"],
+main > section > div > form > input[type="number"]{
+  border: solid 2px #0e0e0e;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px 5px;
+}
+main > section > div > form > input[type="submit"]{
+  border: solid 2px #8338ec;
+  background-color: #8338ec;
+  color: #f8f8f8;
+  padding: 15px 35px;
+  font-size: 20px;
+}
+/** aside **/
+aside{
+  width: 40%;
+  float: right;
+}
+aside > article{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+aside > article > img{
+  width: 100%;
+  margin-top: 25px;
+}
+aside > article > h4{
+  font-size: 22px;
+}
+aside > article > a{
+  border: solid 2px #8338ec;
+  background-color: #8338ec;
+  padding: 15px 35px;
+  color: #f8f8f8;
+}
+/** footer **/
+footer{
+  width: 100%;
+  clear: both;
+}
